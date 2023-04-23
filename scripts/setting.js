@@ -37,5 +37,6 @@ btnSubmit.addEventListener("click", function (e) {
     currentAccount.pageSize = pageSizeInput.value;
     currentAccount.category = categoryInput.value;
     saveToStorage(KEYLOGIN, JSON.stringify(currentAccount));
+    window.location.href = "../pages/news.html";
   }
 });
